@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="habilidades2.css">
+    <link rel="stylesheet" href="habilidades3.css">
+    <link rel="stylesheet" href="habilidades4.css">
+    <link rel="stylesheet" href="habilidades5.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JulianRG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>JULIÁN RODRÍGUEZ GÓMEZ</h1>
+            <h2>Ingeniero de Sistemas - Desarrollador de Software</h2>
+            <div class="redes">
+                <a href="mailto:julianrg11@hotmail.com" class="email"><i class="bi bi-envelope-at"></i></a>
+                <a href="https://github.com/JulianRG1512" target="_blank" class="github"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/juli%C3%A1n-rodr%C3%ADguez-g%C3%B3mez/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/573012736389" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Julián Rodríguez Gómez.</span> Ingeniero de Sistemas, con experiencia académica en desarrollo de software de más de un año como exparticipante del programa Misión Tic 2022 y ONE de Oracle y AluraLatam, los cuales me permitieron poner en práctica los
+                conocimientos y tecnologías aprendidas a través del desarrollo de proyectos, cuento con experiencia profesional en el área de auditoría y me encuentro en búsqueda de una oportunidad laboral en el área de desarrollo de software, que me permita aportar con mis conocimientos y experiencia y así mismo tener un aprendizaje continuo. He desarrollado proyectos utilizando tecnologías y lenguajes como: 
+                <b>JavaScript, Html, Css, React.js, Node.js, Java (POO, JPA), Java Web (JSP), Git, Postman, MySQL, MongoDB, Bootstrap</b>.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Profesión</strong>
+                            Ingeniero de Sistemas
+                        </li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10/06/1980
+                        </li>
+                        
+                        <li>
+                            <strong>Email</strong>
+                            julianrg11@hotmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Dirección</strong>
+                            Zipaquirá - Cundinamarca <img class="bandera" src="img/colombia.png" alt="">
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3 class="inte">Intereses</h3>
+                    <div class="contenedor-intereses">
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                            <span>PODCAST</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>DEVELOPER</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+                   
+            <div id="wrap">
+                <a href="doc/CV_JulianRodriguezGomez.pdf" class="btn-slide" target="_blank">
+                <span class="circle"><i class="fa fa-file-text" aria-hidden="true"></i></span>
+                <span class="title">Descarga CV</span>
+                <span class="title-hover">Click Aquí</span>
+                </a>
+            </div>   
+        </div>
+    </section>
+    
+    <!--Nueva seccion-->
+
+   
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Professional Skills</h3>
+
+                    <div class="item izq">
+                        <div class="profile3">
+                            <div class="photo3">
+                                <img src="img/skills/tecnicas/habilidades.svg"/>
+                            </div>
+                            <div class="contentenido3">
+                                <div class="text3">
+                                    <h3>Habilidades Técnicas</h3>
+                                </div>
+                                <div class="btn3"><span></span></div>
+                            </div>
+                            <div class="box3"> 
+                                <img src="img/skills/tecnicas/html.png">
+                                <img src="img/skills/tecnicas/css.png">
+                                <img src="img/skills/tecnicas/javascript.png">
+                                <img src="img/skills/tecnicas/react.png">
+                                <img src="img/skills/tecnicas/node.png">
+                            </div>
+                        </div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="item izq">
+                        <div class="profile2">
+                            <div class="photo2">
+                            <img src="img/skills/tecnicas/habilidades.svg"/>
+                            </div>
+                                <div class="contentenido2">
+                                    <div class="text2">
+                                        <h3>Habilidades Técnicas</h3>
+                                    </div>
+                                <div class="btn2"><span></span></div>
+                                </div>
+                            <div class="box2">
+                                <img src="img/skills/tecnicas/git.png">
+                                <img src="img/skills/tecnicas/java.png">
+                                <img src="img/skills/tecnicas/mongodb.png">
+                                <img src="img/skills/tecnicas/mysql.png">
+                                <img src="img/skills/tecnicas/postman.png">
+                            </div>
+                        </div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Habilidades Blanda</h3>
+                    <div class="item der">
+
+                        <div class="profile4">
+                            <div class="photo4">
+                                <img src="img/skills/blandas/blandas.jpg"/>
+                            </div>
+                            <div class="contentenido4">
+                                <div class="text4">
+                                    <h3>Soy</h3>
+                                </div>
+                                <div class="btn4"><span></span></div>
+                            </div>
+                            <div class="box4">
+                                <img src="img/skills/blandas/productivo.png">
+                                <img src="img/skills/blandas/empatia.png">
+                                <img src="img/skills/blandas/creatividad.png">
+                                <img src="img/skills/blandas/responsabilidad.png">
+                                <img src="img/skills/blandas/organizacion.png">
+                            </div>
+                            <div class="box4_1">
+                                <h6>Productivo</h6>
+                                <h6>Empático</h6>
+                                <h6>Creativo</h6>
+                                <h6>Comprometido</h6>
+                                <h6>Metódico</h6>
+                            </div>
+                        </div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                                <div class="item der">
+
+                                    <div class="profile5">
+                            <div class="photo5">
+                                <img src="img/skills/blandas/blandas.jpg"/>
+                            </div>
+                            <div class="contentenido5">
+                                <div class="text5">
+                                    <h3>Puedo y Tengo</h3>
+                                </div>
+                                <div class="btn5"><span></span></div>
+                            </div>
+                            <div class="box5">
+                                <img src="img/skills/blandas/trabajo-en-equipo.png">
+                                <img src="img/skills/blandas/resolucionproblemas.png">
+                                <img src="img/skills/blandas/aprendizaje.png">
+                                <img src="img/skills/blandas/gestion-del-tiempo.png">
+                                <img src="img/skills/blandas/iniciativa.png">
+                            </div>
+                            <div class="box5_1">
+                                <h6>Trabajar en Equipo</h6>
+                                <h6>Pensamiento Analítico</h6>
+                                <h6>Aprendizaje Continuo</h6>
+                                <h6>Gestión del Tiempo</h6>
+                                <h6>Iniciativa</h6>
+                            </div>
+                        </div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div> 
+                                </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Fundación Universitaria San Martin</span>
+                        <span class="fecha">2005 - 2012</span>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomado Seguridad de la Información</h4>
+                        <span class="casa">Fundación Egresados Universidad Distrital</span>
+                        <span class="fecha">2021, 120 horas</span>
+                        <p> Diplomado en Seguridad de la Información con enfoque en el estándar ISO 27001:2013, el cual me permitió certificarme como auditor interno ISO 27001:2013 por SGSI. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo de Aplicaciones Web</h4>
+                        <span class="casa">Universidad Industrial de Santander
+                            / Mision Tic 2022</span>
+                        <span class="fecha">2022</span>
+                        <p>Programa de Mintic en colaboración con la Universidad Industrial de Santander, en donde se trabajo 320 horas sincrónicas y 480 horas trabajo autónomo, en lenguajes de programación como:
+                            Java, Html, Css, Java Script, MySql, MongoDb.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Metodología Scrum</h4>
+                        <p>Aplicación del marco de trabajo Scrum para proyectos de
+                            desarrollo de software.</p>
+                        <span class="casa">Sena</span>
+                        <span class="fecha">2022, 48 horas</span>
+                        <p>Scrum Foundation.</p>
+                        <span class="casa">Certiprof</span>
+                        <span class="fecha">2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programa de Formación en Desarrollo de Software G4-ONE</h4>
+                        <span class="casa">Oracle + Alura Latam</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Formación en Desarrollo de Software, con una intensidad horaria de 343 horas, en donde se desarrollaron cursos como: Desarrollo Personal, Principiante en Programación,
+                            FrontEnd, React, Emprendimiento, entre otras, asi mismo se desarrollaron proyectos que permitieron poner en practica los lenguajes de programación y tecnologías aprendidas. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Software Testing</h4>
+                        <span class="casa">Undemy</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso práctico que me permitió adquirir conocimientos básicos sobre pruebas de software y QA, mediante la utilizacion de herramientas como:
+                            JIRA,Postman, Selenium IDE.  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador FrontEnd</h4>
+                       <!-- <span class="casa">Nombre de Compañía</span>-->
+                        <span class="fecha">Mayo 2023 - Actualmente</span>
+                        <p>A traves de las diferentes formaciones en desarrollo de software y a nivel personal he podido realizar proyectos que me han permitido poner en practica los conocimientos
+                            adquiridos en lenguajes de programación y tecnologías como: <b>JavaScript, Html, Css, React.js, Node.js, Java (POO, JPA), Java Web (JSP), Git, Postman, MySQL, MongoDB, Bootstrap, entre otras </b>.  </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>Auditor Oficina de Control Interno</h4>
+                        <span class="casa">Unidad Administrativa de Catastro Distrital </span>
+                        <span class="fecha">Marzo 2021 - Mayo 2022</span>
+                        <p>Prestación de servicios profesionales en temas tecnológicos, de seguridad de la información y de gestión administrativa para la ejecución de las auditorías, seguimientos, evaluaciones y acompañamientos en el desarrollo del Programa Anual de Auditorías aprobado y el Plan de Acción Institucional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auditor Oficina de Control Interno</h4>
+                        <span class="casa">Archivo General de la Nación</span>
+                        <span class="fecha">Enero 2015 - Noviembre 2019</span>
+                        <p>Ejecución de auditorías y seguimientos programados para la vigencia, revisión, desarrollo, ajuste, integración e implementación de herramientas informáticas de control y monitoreo para la Oficina de Control Interno, elaboración de reportes de avance e informes,elaboración de presentaciones, apoyo técnico al personal del área en el manejo de sistemas, entre otras.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/img/proyectos/encriptador.png" alt="">
+                            <h3>Encriptador</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/mongodb.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/Checklist.png" alt="">
+                            <h3>CheckList</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/css.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/portafolio.png" alt="">
+                            <h3>Portafolio Personal</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p> 
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/organizacio.png" alt="">
+                            <h3>Organización</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/Calculadora.png" alt="">
+                            <h3>Calculadora</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/crud.png" alt="">
+                            <h3>Crud_FullStack</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/portafolio.png" alt="">
+                            <h3>Portafolio Personal</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/organizacio.png" alt="">
+                            <h3>Organización</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/Calculadora.png" alt="">
+                            <h3>Calculadora</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/crud.png" alt="">
+                            <h3>Crud_FullStack</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/portafolio.png" alt="">
+                            <h3>Portafolio Personal</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="/imagenes/proyectos/organizacio.png" alt="">
+                            <h3>Organización</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Encriptador de palabras</p><br>
+                            <p>Desarrollado como challenge en el programa ONE, al finalizar el curso de principios de programación.</p>
+                            <div class="tecnologias">
+                                <a href="https://encriptadorjulianrg.netlify.app/" target="_blank">Ver más</a>
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                                <img src="img/skills/tecnicas/html.svg" alt="">
+                                <img src="img/skills/tecnicas/javascript.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            
+                <!-- Formulario -->
+                <div class="contenedor-form">
+                
+                    <form name="contacto" netlify>
+    
+                        <div class="fila">
+                            <input type="text" name="nombre" placeholder=" Nombre Completo *" class="controls" required>
+                            <i class="fa-regular fa-user"></i>
+                            <input type="email" name="email" placeholder="Dirección de Email" class="controls" required>
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text"  name="tema" placeholder="Tema..." class="controls">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                            <textarea  class="mensaje" name="mensaje" id="" cols="30" rows="5" placeholder="Tu Mensaje..." required></textarea>
+                            <i class="fa-regular fa-message"></i>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    </form>
+                </div>
+              
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+    
+    <footer>
+       
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="redes">
+            <a href="mailto:julianrg11@hotmail.com" class="email"><i class="bi bi-envelope-at"></i></a>
+            <a href="https://github.com/JulianRG1512" target="_blank" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/juli%C3%A1n-rodr%C3%ADguez-g%C3%B3mez/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/573012736389" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        
+         
+    </footer>
+
+
+        
+
+
+    <script src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="script2.js"></script>
+</body>
+</html>

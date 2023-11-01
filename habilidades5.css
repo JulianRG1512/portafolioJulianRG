@@ -1,0 +1,355 @@
+
+.profile5{
+    width: 330px;
+    height: 100px;
+    position:relative;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 0 1rem #babbbc;
+    animation: show-profile 0.5s forwards ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+@keyframes show-profile{
+    0% {
+        width: 0;
+    }
+}
+
+.profile5 .photo5, .profile5 .contentenido5{
+    box-sizing: border-box;
+}
+
+.profile5 .photo5{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fafafa;
+    background-color: #fafafa;
+    margin-left: -50px;
+    box-shadow: 0 0 0.5rem #babbbc;
+    animation: rotate-photo 0.5s forwards ease-in-out;
+    
+}
+
+@keyframes rotate-photo{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.profile5 .photo5 img{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.profile5 .contentenido5{
+    padding: 10px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.profile5 .contentenido5::before{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 150px;
+    background-color: #ff0057;
+    left: 0;
+    top: -20px;
+    z-index: -1;
+    transform: rotate(-8deg);
+}
+
+.profile5 .contentenido5 .text5{
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 110px;
+    text-align: center;
+}
+
+.profile5 .contentenido5 .text5 h3{
+    
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile5 .contentenido5 .btn5{
+    background-image: url(img/bx-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1465bb;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    animation: pop-btn 0.3s both ease-in-out 0.5s;
+}
+
+@keyframes pop-btn{
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.profile5 .contentenido5 .btn5:hover{
+    box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+}
+
+.profile5 .box5 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ececec;
+    font-size: 26px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 240px;
+    top: 20px;
+    box-shadow: 0 0 0.5rem #babbbc;
+    transition-duration: 0.3s;
+}
+.profile5 .box5 img:hover{
+    transition-delay: initial !important;
+    box-shadow: 0 0 0.5px #babbbc;
+}
+
+.profile5 .box5.open5{
+ opacity: 1;
+}
+.profile5 .box5.open5 img{
+    left: 250px;
+}
+
+.profile5 .box5.open5 img:nth-of-type(1){
+    transform: rotate(-90deg) translateX(120px) rotate(90deg);
+    transition-delay: 0s;
+}
+
+.profile5 .box5.open5 img:nth-of-type(2){
+    transform: rotate(-45deg) translateX(120px) rotate(45deg);
+    transition-delay: 0.1s;
+}
+
+.profile5 .box5.open5 img:nth-of-type(3){
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+    transition-delay: 0.2s;
+}
+
+.profile5 .box5.open5 img:nth-of-type(4){
+    transform: rotate(45deg) translateX(120px) rotate(-45deg);
+    transition-delay: 0.3s;
+}
+
+.profile5 .box5.open5 img:nth-of-type(5){
+    transform: rotate(90deg) translateX(120px) rotate(-90deg);
+    transition-delay: 0.4s;
+}
+             /*Segunda Caja*/
+             .profile5 .box5_1 h6 {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 250px;
+                top: 22px;
+                transition-duration: 0.3s;
+                font-size: 10px;
+                padding-top: 25px;
+                color: #fff;
+                
+                
+            }
+            .profile5 .box5_1 h6:hover{
+                transition-delay: initial !important;
+                box-shadow: 0 0 0.5px #babbbc;
+            }
+
+            .profile5 .box5_1.open5{
+                opacity: 1;
+            }
+            .profile5 .box5_1.open5 h6{
+                left: 300px;
+            }
+
+            .profile5 .box5_1.open5 h6:nth-of-type(1){
+                transform: rotate(-95deg) translateX(170px) rotate(95deg);
+                transition-delay: 0s;
+            }
+
+            .profile5 .box5_1.open5 h6:nth-of-type(2){
+                transform: rotate(-45deg) translateX(150px) rotate(45deg);
+                transition-delay: 0.1s;
+            }
+
+            .profile5 .box5_1.open5 h6:nth-of-type(3){
+                transform: rotate(0deg) translateX(145px) rotate(0deg);
+                transition-delay: 0.2s;
+            }
+
+            .profile5 .box5_1.open5 h6:nth-of-type(4){
+                transform: rotate(40deg) translateX(140px) rotate(-40deg);
+                transition-delay: 0.3s;
+            }
+
+            .profile5 .box5_1.open5 h6:nth-of-type(5){
+                transform: rotate(90deg) translateX(160px) rotate(-90deg);
+                transition-delay: 0.4s;
+            }
+
+
+
+
+    @media screen and (max-width: 800px){
+        .profile5{
+            width: 200px;
+            height: 75px;
+            margin-top: 100px;
+            position:relative;
+            top: 50%;
+            left: 0%;
+        }
+        
+        .profile5 .photo5{
+            width: 75px;
+            height: 75px;
+        }
+    
+        .profile5 .contentenido5 .text5{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+    
+        .profile5 .contentenido5 .text5 h3{
+            font-size: 12px;
+        }
+    
+        .profile5 .contentenido5 .btn5{
+            right: 8px;
+            top: 15px;
+            width: 50px;
+            height: 50px;
+        }
+    
+        .profile5 .box5 img {
+            font-size: 10px;
+            left: 150px;
+            top: 19px;
+            width: 40px;
+            height: 40px;
+        }
+                
+        .profile5 .box5.open5{
+            opacity: 1;
+        }
+        
+        .profile5 .box5.open5 img{
+            left: 110px;
+        }
+    
+        .profile5 .box5.open5 img:nth-of-type(1){
+            transform: rotate(-73deg) translateX(135px) rotate(73deg);
+            transition-delay: 0s;
+        }
+        
+        .profile5 .box5.open5 img:nth-of-type(2){
+            transform: rotate(-60deg) translateX(80px) rotate(60deg);
+            transition-delay: 0.1s;
+        }
+        
+        .profile5 .box5.open5 img:nth-of-type(3){
+            transform: rotate(60deg) translateX(70px) rotate(-60deg);
+            transition-delay: 0.2s;
+        }
+        
+        .profile5 .box5.open5 img:nth-of-type(4){
+            transform: rotate(73deg) translateX(120px) rotate(-73deg);
+            transition-delay: 0.3s;
+        }
+        
+        .profile5 .box5.open5 img:nth-of-type(5){
+            transform: rotate(78deg) translateX(170px) rotate(-78deg);
+            transition-delay: 0.4s;
+        }
+    
+        /*Segunda caja*/
+                
+        .profile5 .box5_1 h6 {
+            font-size: 8px;
+            left: 100px;
+            top: 12px;
+            width: 40px;
+            height: 40px;
+            color: #FF0057;
+        }
+                
+        .profile5 .box5_1.open5{
+            opacity: 1;
+        }
+        
+        .profile5 .box5_1.open5 h6{
+            left: 110px;
+        }
+    
+        
+    
+         
+    
+        .profile5 .box5_1.open5 h6:nth-of-type(1){
+            transform: rotate(-100deg) translateX(150px) rotate(100deg);
+            transition-delay: 0s;
+        }
+    
+        .profile5 .box5_1.open5 h6:nth-of-type(2){
+            transform: rotate(-110deg) translateX(90px) rotate(110deg);
+            transition-delay: 0.1s;
+        }
+    
+        .profile5 .box5_1.open5 h6:nth-of-type(3){
+            transform: rotate(120deg) translateX(60px) rotate(-120deg);
+            transition-delay: 0.2s;
+        }
+    
+        .profile5 .box5_1.open5 h6:nth-of-type(4){
+            transform: rotate(105deg) translateX(95px) rotate(-105deg);
+            transition-delay: 0.3s;
+        }
+    
+        .profile5 .box5_1.open5 h6:nth-of-type(5){
+            transform: rotate(98deg) translateX(160px) rotate(-98deg);
+            transition-delay: 0.4s;
+        }
+    }    
+
+
+    
+
+
+                
