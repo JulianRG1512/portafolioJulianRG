@@ -612,7 +612,8 @@ html{
 }
 
 .card .face.face1 .content img{
-    max-width: 200px;
+    max-width: 250px;
+    
 }
 
 .card .face.face1 .content h3{
@@ -667,7 +668,6 @@ html{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-
 }
 
 .tecnologias img{
@@ -682,8 +682,9 @@ justify-content: space-around;
 .tecnologias img:hover{
     transition: transform .2s; 
     transform: scale(1.5);
-
 }
+
+
 
 
 /* SECCION CONTACTO */
