@@ -9,6 +9,33 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #fff;
+    background-color:#1BD741;
+    transform: rotate(30deg) scale(1.2);
+}
+
+
+.my-float{
+	margin-top:16px;
+}
+
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -131,6 +158,11 @@ html{
 
 #inicio .redes .linkedin:hover{
     background: #0A66C2;
+    transform: rotate(20deg) scale(1.2);
+}
+
+#inicio .redes .telephone:hover{
+    background: #FF3D3D;
     transform: rotate(20deg) scale(1.2);
 }
 
@@ -872,6 +904,10 @@ footer .redes .github:hover{
 
 footer .redes .linkedin:hover{
     background: #0A66C2;
+    transform: rotate(20deg) scale(1.2);
+}
+footer .redes .telephone:hover{
+    background: #FF3D3D;
     transform: rotate(20deg) scale(1.2);
 }
 
