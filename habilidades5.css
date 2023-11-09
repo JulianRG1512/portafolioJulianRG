@@ -227,7 +227,7 @@
 
 
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 1024px){
         .profile5{
             width: 200px;
             height: 75px;
