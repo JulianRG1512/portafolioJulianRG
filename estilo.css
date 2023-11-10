@@ -12,8 +12,8 @@ html{
 
 .float{
 	position:fixed;
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 	bottom:40px;
 	right:40px;
 	background-color:#25d366;
@@ -33,7 +33,7 @@ html{
 
 
 .my-float{
-	margin-top:16px;
+	margin-top:12px;
 }
 
 /* MENU */
@@ -947,6 +947,29 @@ footer .redes .whatsapp:hover{
 }
 
 @media screen and (max-width:700px){
+
+    .float{
+        
+        width:40px;
+        height:40px;
+        bottom:20px;
+        right:20px;
+        font-size:25px;
+        
+    }
+    .float:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color:#1BD741;
+        transform: rotate(30deg) scale(1.2);
+    }
+    
+    
+    .my-float{
+        margin-top:8px;
+    }
+
+
     .sobremi .fila{
         display: block;
     }
