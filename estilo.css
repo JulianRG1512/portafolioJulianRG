@@ -916,6 +916,11 @@ footer .redes .whatsapp:hover{
     transform: rotate(20deg) scale(1.2);
 }
 
+center{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+}
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
@@ -1045,7 +1050,10 @@ footer .redes .whatsapp:hover{
             font-size: 25px;
        }
 
-    
+       center{
+        display: none;
+        
+    }
      
 
    
