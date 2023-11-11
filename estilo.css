@@ -679,7 +679,7 @@ html{
     color: #3e4144;
 }
 
-.card .face.face2 .content a{
+.card .face.face2 .content .vermas{
     margin: 20px 0 0;
     display: inline-block;
     text-decoration: none;
@@ -690,11 +690,13 @@ html{
     font-size: 14px;
 }
 
-.card .face.face2 .content a:hover{
+.card .face.face2 .content .vermas:hover{
     background: #2196f3;
     color: #fff;
     
 }
+
+
 
 .tecnologias{
 display: flex;
@@ -713,10 +715,12 @@ justify-content: space-around;
 .tecnologias img:hover{
     transition: transform .2s; 
     transform: scale(1.5);
-
-
+    
 }
 
+.tecnologias .github:hover{
+    transform: rotate(20deg) scale(1.2);
+}
 
 
 
