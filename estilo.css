@@ -714,7 +714,7 @@ justify-content: space-around;
 
 .tecnologias img:hover{
     transition: transform .2s; 
-    transform: scale(1.5);
+    transform: scale(2);
     
 }
 
