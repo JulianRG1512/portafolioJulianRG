@@ -12,11 +12,11 @@ html{
 
 .float{
 	position:fixed;
-	width:50px;
-	height:50px;
+	width:60px;
+	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#25d366;
+	background-color:#2196f3;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -26,9 +26,18 @@ html{
 }
 .float:hover {
 	text-decoration: none;
-	color: #fff;
-    background-color:#1BD741;
-    transform: rotate(30deg) scale(1.2);
+	background-color: #0cb7f2;
+    border: 0.1px solid #099FFF;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.4);
+}
+
+.asesor{
+    width:45px;
+	height:45px;
+	bottom:45px;
+	right:45px;
+    margin-top: 6px;
 }
 
 
@@ -73,10 +82,7 @@ html{
 }
 .contenedor-header header nav ul li a:hover{
     color: #0cb7f2;
-    
     text-shadow: 3px 3px 5px #00FFFF;
-    
-   
 }
 .nav-responsive{
     background-color: #2196f3;

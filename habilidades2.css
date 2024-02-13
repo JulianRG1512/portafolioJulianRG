@@ -89,7 +89,7 @@
 }
 
 .profile2 .contentenido2 .btn2{
-    background-image: url(img/bx-menu.svg);
+    background-image: url(img/alinear-a-la-derecha.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1465bb;
@@ -119,6 +119,7 @@
 
 .profile2 .contentenido2 .btn2:hover{
     box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+    
 }
 
 .profile2 .box2 img {
