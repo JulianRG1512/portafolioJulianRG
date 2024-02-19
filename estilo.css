@@ -609,6 +609,10 @@ html{
     justify-content: space-around;
 }
 
+.ver{
+    display: none;
+}
+
 .card{
     position: relative;
     cursor: pointer;
@@ -618,8 +622,8 @@ html{
 }
 
 .card .face{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     transition: 0.5s;
     box-shadow: 0 4px 8px 0 #1465bb, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0.1px solid #099FFF;
@@ -632,7 +636,7 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(150px);
 }
 
 .card:hover .face.face1{
@@ -655,7 +659,7 @@ html{
 }
 
 .card .face.face1 .content h3{
-    margin: 10px 0 0 ;
+    margin: 5px 0 0 ;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -680,7 +684,7 @@ html{
 
 .card .face.face2 p{
     margin: 0;
-    padding: 0;
+    padding: 2;
     font-size: 14px;
     color: #3e4144;
 }
@@ -959,6 +963,12 @@ center{
     nav.responsive ul li {
         margin: 5px 0;
     }
+
+    .ver{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:700px){
@@ -1040,6 +1050,13 @@ center{
     }
 
         /* seccion PORTFOLIO */
+
+        .ver{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .portfolio {
             padding: 50px 0;
         }
