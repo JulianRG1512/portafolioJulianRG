@@ -9,13 +9,13 @@
     border-radius: 5px;
     background-color: #fafafa;
     box-shadow: 0 0 1rem #babbbc;
-    animation: show-profile 0.5s forwards ease-in-out;
+    animation: show-profile3 0.5s forwards ease-in-out;
     margin-top: 50px;
     margin-bottom: 50px;
     
 }
 
-@keyframes show-profile{
+@keyframes show-profile3{
     0% {
         width: 0;
     }
@@ -34,11 +34,11 @@
     background-color: #fafafa;
     margin-left: -50px;
     box-shadow: 0 0 0.5rem #babbbc;
-    animation: rotate-photo 0.5s forwards ease-in-out;
+    animation: rotate-photo3 0.5s forwards ease-in-out;
     
 }
 
-@keyframes rotate-photo{
+@keyframes rotate-photo3{
     100%{
         transform: rotate(-360deg);
     }
@@ -80,16 +80,12 @@
 }
 
 .profile3 .contentenido3 .text3 h3{
-    
     letter-spacing: 0.5px;
     font-size: 18px;
     font-weight: bold;
 }
 
 .profile3 .contentenido3 .btn3{
-    background-image: url(img/alinear-a-la-derecha.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #1465bb;
     width: 70px;
     height: 70px;
@@ -100,10 +96,10 @@
     z-index: 1;
     cursor: pointer;
     transition-duration: 0.3s;
-    animation: pop-btn 0.3s both ease-in-out 0.5s;
+    animation: pop-btn3 0.3s both ease-in-out 0.5s;
 }
 
-@keyframes pop-btn{
+@keyframes pop-btn3{
     0%{
         transform: scale(0);
     }
@@ -116,8 +112,62 @@
 }
 
 .profile3 .contentenido3 .btn3:hover{
-    box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+    box-shadow: 0 0 0 5px rgba(9, 111, 212, 0.5);
 }
+
+.profile3 .contentenido3 .btn3 span {
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    animation: to-hamburger 0.3s forwards ease-in-out;
+  }
+  .profile3 .contentenido3 .btn3 span::before, .profile3 .contentenido3 .btn3 span::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    transition-duration: 0.3s;
+    transform: rotate(0deg);
+    right: 0;
+  }
+  .profile3 .contentenido3 .btn3 span::before {
+    margin-top: -7px;
+  }
+  .profile3 .contentenido3 .btn3 span::after {
+    margin-top: 7px;
+  }
+  .profile3 .contentenido3 .btn3.active span {
+    animation: to-arrow 0.3s forwards ease-in-out;
+  }
+  .profile3 .contentenido3 .btn3.active span::before, .profile3 .contentenido3 .btn3.active span::after {
+    width: 50%;
+    right: -4px;
+  }
+  .profile3 .contentenido3 .btn3.active span::before {
+    transform: rotate(45deg);
+  }
+  .profile3 .contentenido3 .btn3.active span::after {
+    transform: rotate(-45deg);
+  }
+  @keyframes to-hamburger {
+    from {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+  @keyframes to-arrow {
+    from {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
 
 .profile3 .box3 img {
     width: 60px;
@@ -202,6 +252,11 @@
         width: 50px;
         height: 50px;
     }
+
+    .profile3 .contentenido3 .btn3.active span::before, .profile3 .contentenido3 .btn3.active span::after {
+        width: 50%;
+        right: -1px;
+      }
 
     .profile3 .box3 img {
         font-size: 10px;

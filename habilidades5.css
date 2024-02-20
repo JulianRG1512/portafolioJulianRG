@@ -9,13 +9,13 @@
     border-radius: 5px;
     background-color: #fafafa;
     box-shadow: 0 0 1rem #babbbc;
-    animation: show-profile 0.5s forwards ease-in-out;
+    animation: show-profile5 0.5s forwards ease-in-out;
     margin-top: 50px;
     margin-bottom: 50px;
     
 }
 
-@keyframes show-profile{
+@keyframes show-profile5{
     0% {
         width: 0;
     }
@@ -34,11 +34,11 @@
     background-color: #fafafa;
     margin-left: -50px;
     box-shadow: 0 0 0.5rem #babbbc;
-    animation: rotate-photo 0.5s forwards ease-in-out;
+    animation: rotate-photo5 0.5s forwards ease-in-out;
     
 }
 
-@keyframes rotate-photo{
+@keyframes rotate-photo5{
     100%{
         transform: rotate(-360deg);
     }
@@ -87,9 +87,6 @@
 }
 
 .profile5 .contentenido5 .btn5{
-    background-image: url(img/alinear-a-la-derecha.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #1465bb;
     width: 70px;
     height: 70px;
@@ -100,10 +97,10 @@
     z-index: 1;
     cursor: pointer;
     transition-duration: 0.3s;
-    animation: pop-btn 0.3s both ease-in-out 0.5s;
+    animation: pop-btn5 0.3s both ease-in-out 0.5s;
 }
 
-@keyframes pop-btn{
+@keyframes pop-btn5{
     0%{
         transform: scale(0);
     }
@@ -116,8 +113,63 @@
 }
 
 .profile5 .contentenido5 .btn5:hover{
-    box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+    box-shadow: 0 0 0 5px rgba(9, 111, 212, 0.5);
 }
+
+/**/
+.profile5 .contentenido5 .btn5 span {
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    animation: to-hamburger 0.3s forwards ease-in-out;
+  }
+  .profile5 .contentenido5 .btn5 span::before, .profile5 .contentenido5 .btn5 span::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    transition-duration: 0.3s;
+    transform: rotate(0deg);
+    right: 0;
+  }
+  .profile5 .contentenido5 .btn5 span::before {
+    margin-top: -7px;
+  }
+  .profile5 .contentenido5 .btn5 span::after {
+    margin-top: 7px;
+  }
+  .profile5 .contentenido5 .btn5.active span {
+    animation: to-arrow 0.3s forwards ease-in-out;
+  }
+  .profile5 .contentenido5 .btn5.active span::before, .profile5 .contentenido5 .btn5.active span::after {
+    width: 50%;
+    right: -4px;
+  }
+  .profile5 .contentenido5 .btn5.active span::before {
+    transform: rotate(45deg);
+  }
+  .profile5 .contentenido5 .btn5.active span::after {
+    transform: rotate(-45deg);
+  }
+  @keyframes to-hamburger {
+    from {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+  @keyframes to-arrow {
+    from {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+/**/
 
 .profile5 .box5 img {
     width: 60px;
@@ -192,34 +244,34 @@
                 box-shadow: 0 0 0.5px #babbbc;
             }
 
-            .profile5 .box5_1.open5{
+            .profile5 .box5_1.open5_1{
                 opacity: 1;
             }
-            .profile5 .box5_1.open5 h6{
+            .profile5 .box5_1.open5_1 h6{
                 left: 300px;
             }
 
-            .profile5 .box5_1.open5 h6:nth-of-type(1){
+            .profile5 .box5_1.open5_1 h6:nth-of-type(1){
                 transform: rotate(-95deg) translateX(170px) rotate(95deg);
                 transition-delay: 0s;
             }
 
-            .profile5 .box5_1.open5 h6:nth-of-type(2){
+            .profile5 .box5_1.open5_1 h6:nth-of-type(2){
                 transform: rotate(-45deg) translateX(150px) rotate(45deg);
                 transition-delay: 0.1s;
             }
 
-            .profile5 .box5_1.open5 h6:nth-of-type(3){
+            .profile5 .box5_1.open5_1 h6:nth-of-type(3){
                 transform: rotate(0deg) translateX(145px) rotate(0deg);
                 transition-delay: 0.2s;
             }
 
-            .profile5 .box5_1.open5 h6:nth-of-type(4){
+            .profile5 .box5_1.open5_1 h6:nth-of-type(4){
                 transform: rotate(40deg) translateX(140px) rotate(-40deg);
                 transition-delay: 0.3s;
             }
 
-            .profile5 .box5_1.open5 h6:nth-of-type(5){
+            .profile5 .box5_1.open5_1 h6:nth-of-type(5){
                 transform: rotate(90deg) translateX(160px) rotate(-90deg);
                 transition-delay: 0.4s;
             }
@@ -258,6 +310,10 @@
             height: 50px;
         }
     
+        .profile5 .contentenido5 .btn5.active span::before, .profile5 .contentenido5 .btn5.active span::after {
+            width: 50%;
+            right: -1px;
+        }
         .profile5 .box5 img {
             font-size: 10px;
             left: 150px;
@@ -310,11 +366,11 @@
             color: #FF0057;
         }
                 
-        .profile5 .box5_1.open5{
+        .profile5 .box5_1.open5_1{
             opacity: 1;
         }
         
-        .profile5 .box5_1.open5 h6{
+        .profile5 .box5_1.open5_1 h6{
             left: 110px;
         }
     
@@ -322,27 +378,27 @@
     
          
     
-        .profile5 .box5_1.open5 h6:nth-of-type(1){
+        .profile5 .box5_1.open5_1 h6:nth-of-type(1){
             transform: rotate(-100deg) translateX(150px) rotate(100deg);
             transition-delay: 0s;
         }
     
-        .profile5 .box5_1.open5 h6:nth-of-type(2){
+        .profile5 .box5_1.open5_1 h6:nth-of-type(2){
             transform: rotate(-110deg) translateX(90px) rotate(110deg);
             transition-delay: 0.1s;
         }
     
-        .profile5 .box5_1.open5 h6:nth-of-type(3){
+        .profile5 .box5_1.open5_1 h6:nth-of-type(3){
             transform: rotate(120deg) translateX(60px) rotate(-120deg);
             transition-delay: 0.2s;
         }
     
-        .profile5 .box5_1.open5 h6:nth-of-type(4){
+        .profile5 .box5_1.open5_1 h6:nth-of-type(4){
             transform: rotate(105deg) translateX(95px) rotate(-105deg);
             transition-delay: 0.3s;
         }
     
-        .profile5 .box5_1.open5 h6:nth-of-type(5){
+        .profile5 .box5_1.open5_1 h6:nth-of-type(5){
             transform: rotate(98deg) translateX(160px) rotate(-98deg);
             transition-delay: 0.4s;
         }
